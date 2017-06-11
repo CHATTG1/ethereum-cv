@@ -10,8 +10,10 @@ Follow the steps described here below to install, deploy and run the Dapp.
 
 ## Step 2. Install all modules
 
-`cd ethereum-cv`
-`npm install`
+```
+$ cd ethereum-cv
+$ npm install
+```
 
 
 ## Step 3. Start your Ethereum node
@@ -24,8 +26,10 @@ Edit the file "truffle.js" and set the port number according your Ethereum node.
 
 ## Step 5. Compile and Deploy your smart contract
 
-`truffle compile`
-`truffle migrate`
+```
+$ truffle compile
+$ truffle migrate
+```
 
 ## Step 6. Metamask: link to your private node
 
@@ -37,7 +41,9 @@ Import the accounts defined in your Ethereum node.
 
 ## Step 8. Run you server
 
-`npm run dev`
+```
+$ npm run dev
+```
 
 ## Step 9. Metamask: switch to the coinbase account
 
@@ -45,7 +51,10 @@ The experience of your resume can be added only by the owner of the smart contra
 From Metamask, switch your account to the account used to deploy the contract.
 
 From the Geth console, this account can be identified by running this command:
-`eth.coinbase`
+
+```
+# eth.coinbase
+```
 
 From testrpc, the default account is the account[0]
 
@@ -64,7 +73,10 @@ Metasmask will ask you to confirm the transaction.
 If it's not already the case, start the mining process.
 
 From the Geth console, start the following command:
-`miner.start()`
+
+```
+# miner.start()`
+``` 
 
 From testrpc, the mining is already started.
 
